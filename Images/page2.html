@@ -1,44 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <title>Rainbow Six Siege Operators</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Operators</h1>
-        <h2>Attackers and Defenders</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rainbow Six Siege Operators</title>
 
-  <p>
-    Operators are divided into attackers and defenders. Each operator brings a special
-    gadget that can change how a round is played.
-  </p>
+  <!-- Bootstrap CDN (ABOVE style.css) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <p>
-    Choosing the right operator based on the map and team strategy is very important.
-  </p>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <h3>Popular Attackers</h3>
-  <ul>
-    <li>Ash</li>
-    <li>Sledge</li>
-    <li>Thermite</li>
-  </ul>
+  <header class="bg-dark text-white py-4">
+    <div class="container">
+      <h1 class="display-6 mb-1">Operators</h1>
+      <p class="mb-0">Attackers and defenders with unique gadgets that shape each round.</p>
+    </div>
+  </header>
 
-  <h3>Popular Defenders</h3>
-  <ol>
-    <li>Mute</li>
-    <li>Smoke</li>
-    <li>Jäger</li>
-  </ol>
+  <main class="container my-4">
+    <section class="mb-4">
+      <h2 class="h4 mb-3">Attackers vs. Defenders</h2>
+      <p>
+        Operators are divided into attackers and defenders. Each operator brings a special gadget
+        that can change how a round is played.
+      </p>
+      <p class="mb-0">
+        The best teams pick operators based on the objective, the map, and what their teammates are running.
+      </p>
+    </section>
 
-  <img 
-    src="https://images.steamusercontent.com/ugc/9665805738753739/64906F5173BE0024E183B4638A803CC74BEE105B/" 
-    alt="Rainbow Six Siege operators lineup" 
-    width="400">
+    <section class="row g-4 align-items-start mb-4">
+      <div class="col-12 col-lg-6">
+        <h3 class="h5 mb-3">Popular Attackers</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Ash <span class="badge text-bg-primary rounded-pill">Fast</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Sledge <span class="badge text-bg-secondary rounded-pill">Breach</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Thermite <span class="badge text-bg-success rounded-pill">Hard</span>
+          </li>
+        </ul>
+      </div>
 
-  <p>
-    <a href="index.html">Back to Home</a>
-  </p>
+      <div class="col-12 col-lg-6">
+        <h3 class="h5 mb-3">Popular Defenders</h3>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Mute <span class="badge text-bg-dark rounded-pill">Deny</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Smoke <span class="badge text-bg-warning rounded-pill">Control</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Jäger <span class="badge text-bg-danger rounded-pill">Protect</span>
+          </li>
+        </ol>
+      </div>
+    </section>
 
+    <section class="text-center">
+      <img src="images/operators.jpg" alt="Rainbow Six Siege operators lineup" width="520" class="img-fluid rounded shadow">
+    </section>
+
+    <div class="mt-4">
+      <a class="btn btn-outline-primary" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="bg-light py-3 mt-4 border-top">
+    <div class="container small text-muted">
+      Page 2 • Lists styled with Bootstrap list groups + badges
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

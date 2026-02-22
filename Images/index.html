@@ -1,60 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rainbow Six Siege</title>
+
+  <!-- Bootstrap CDN (ABOVE style.css) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <main>
-    <h1>Rainbow Six Siege</h1>
-    <h2>About the Game</h2>
-    
-    <p>
-      Tom Clancy’s Rainbow Six Siege is a tactical first-person shooter developed by Ubisoft.
-      The game focuses on teamwork, strategy, and environmental destruction.
-    </p>
-
-    <p>
-      Players choose from a variety of operators, each with unique gadgets and abilities.
-      Communication and planning are key to winning matches.
-    </p>
-
-    <div class="flex-container">
-
-      <section class="flex-box">
-        <h3>Main Features</h3>
-        <ul>
-          <li>5v5 tactical gameplay</li>
-          <li>Destructible environments</li>
-          <li>Unique operators</li>
-        </ul>
-      </section>
-
-      <section class="flex-box">
-        <h3>Game Modes</h3>
-        <ol>
-          <li>Bomb</li>
-          <li>Secure Area</li>
-          <li>Hostage</li>
-        </ol>
-      </section>
-
+  <header class="site-hero py-4">
+    <div class="container">
+      <h1 class="display-5 mb-2">Rainbow Six Siege</h1>
+      <p class="lead mb-0">A tactical shooter built on teamwork, strategy, and destructible environments.</p>
     </div>
+  </header>
 
-    <img 
-      src="https://images.seeklogo.com/logo-png/29/1/rainbow-6-siege-logo-png_seeklogo-290243.png" 
-      alt="Rainbow Six Siege operators" 
-      width="400">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">R6 Siege</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <p>
-      <a href="page2.html">Read more on Page 2</a>
-    </p>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="page2.html">Operators</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <main class="container my-4">
+    <section class="mb-4">
+      <h2 class="h3 mb-3">About the Game</h2>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-12 col-lg-6">
+          <p>
+            Tom Clancy’s Rainbow Six Siege is a tactical first-person shooter developed by Ubisoft.
+            The game rewards planning, communication, and smart gadget use.
+          </p>
+          <p class="mb-0">
+            Matches are usually 5v5, with attackers trying to breach and complete an objective while defenders hold key positions.
+          </p>
+
+          <div class="mt-3">
+            <a class="btn btn-primary" href="page2.html">Read more on Page 2</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 text-center">
+          <img src="images/r6s.jpg" alt="Rainbow Six Siege operators" width="420" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </section>
+
+    <section class="row g-4">
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title">Main Features</h3>
+            <ul class="mb-0">
+              <li>5v5 tactical gameplay</li>
+              <li>Destructible environments</li>
+              <li>Unique operators and gadgets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title">Game Modes</h3>
+            <ol class="mb-0">
+              <li>Bomb</li>
+              <li>Secure Area</li>
+              <li>Hostage</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="bg-light py-3 mt-4 border-top">
+    <div class="container small text-muted">
+      Educational project page • Built with Bootstrap + custom CSS
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
